@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./tk1.css" />
+  </head>
+  <body>
+    <div class="all">
+      <h1 id="h1id">color me</h1>
+      <input
+        type="text"
+        id="inputid"
+        onchange="titlechangecolor(), changetext() "
+        onclick="handleinputid()"
+      />
+
+      <select
+        name=""
+        id="selectid"
+        onchange="handleselectid1(),handleselectid2()
+      changetextselect()"
+      >
+        <option value="white">white</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        <option value="red">red</option>
+      </select>
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <div>
+              <a
+                href="#"
+                class="myButton justify-content-center w-100"
+                onclick="cardjs()"
+                >make a card</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div id="cardfromjs"></div>
+              <label for="input2"> for body</label>
+              <input type="text" id="input2" onchange="colorbody()" />
+              <div>
+                <label for="input3"> for card</label>
+                <input type="text" id="input3" onchange="colorbootstrap()" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./tk1.js"></script>
+  </body>
+</html>
